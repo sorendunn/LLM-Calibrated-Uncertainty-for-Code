@@ -1,2 +1,0 @@
-70% of best-performing tests passed
-54% of test were working by termination

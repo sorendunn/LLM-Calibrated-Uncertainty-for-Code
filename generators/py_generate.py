@@ -90,27 +90,3 @@ def py_generate_internal_tests(func_sig: str, model: str, committee_size: int=1)
         prompt = f'{PY_TEST_GENERATION_COMPLETION_INSTRUCTION}\n\nfunc signature:\n{func_sig}\nunit tests:'
         output = gpt_completion(model, prompt)
     cur_tests: List[str] = parse_tests(output) # type: ignore
-
-    # TODO: NOT SUPPORTED YET
-    # someone implement this
-    # cur_refinement_num = 0
-    # while cur_refinement_num < committee_size:
-        # # TODO: implement
-        # cur_tests = ... # type: ignore
-
-        # cur_refinement_num += 1
-
-    return cur_tests
-
-# def get_target_function(func_sig: str, model: str,) -> str:
-    
-#     # First get an implementation of the function
-#     function_text = f'{PY_TEST_GENERATION_FEW_SHOT}\n\nfunc signature:\n{func_sig}\nunit tests:'
-#     function = gpt_chat(model, PY_GET_FUNC_INSTRUCTIONS, function_text)
-    
-#     # Next get the internal of set_problem_values
-#     set_problem_values = f'{PY_TEST_GENERATION_FEW_SHOT}\n\nfunc signature:\n{func_sig}\nunit tests:'
-#     set_problem_values = gpt_chat(model, PY_GET_SET_PROBLEM_INSTRUCTIONS, set_problem_values_text)
-    
-#     # append the two and return
-#     return function + set_problem_values
