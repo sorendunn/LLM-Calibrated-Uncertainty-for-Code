@@ -2,12 +2,13 @@
 title: "Uncertainty Quantification for Code Generation with Large Language Models"
 hide-code: true
 author: Soren Dunn
-github: 
 format:
     html:
         code-fold: true
 kernel: python3
 ---
+
+*Github Link*:  https://github.com/sorendunn/LLM-Calibrated-Uncertainty-for-Code
 
 **Introduction**:
 

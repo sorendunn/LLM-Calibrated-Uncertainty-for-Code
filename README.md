@@ -2,6 +2,7 @@
 
  Repository for "Achieving Calibrated Uncertainty for Code Generation with Large Language Models."
 
+- **Final Report**/ folder contains html and PDF copies of a summary of the final report summarizing this work
 - **calibration_plots.ipynb** - Code to create calibration plots for the finished runs
 - **README.md**
 - **reflexion.py** - Main code overseeing generation of functions and internal test cases. Works both for reflexion and without using reflexion
