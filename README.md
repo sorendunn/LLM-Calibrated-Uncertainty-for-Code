@@ -2,6 +2,8 @@
 
  Repository for "Achieving Calibrated Uncertainty for Code Generation with Large Language Models."
 
+**TLDR;** The percent of self-generated test cases that a model passes is decent measure of uncertainty for code generation in LLM's with an expected calibration error around 0.18 for both GPT-3.5 and GPT-4 evaluated on HumanEval.
+
 - **Final Report**/ folder contains html and PDF copies of a summary of the final report summarizing this work
 - **calibration_plots.ipynb** - Code to create calibration plots for the finished runs
 - **README.md**
