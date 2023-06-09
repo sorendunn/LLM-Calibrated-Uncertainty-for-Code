@@ -19,4 +19,4 @@ USER appuser
 
 # Run the shell script when the container starts
 # CMD ["./run_gen_5.sh"]
-CMD ["./run_validate.sh"]
+CMD ["./run_simple.sh"]
